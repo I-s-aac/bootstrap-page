@@ -1,6 +1,22 @@
 $primaryColor: rgb(155, 0, 202);
-$secondaryTextColor: #FFFFFF;
 $primaryTextColor: $primaryColor;
+$secondaryTextColor: #FFFFFF;
+$tertiaryTextColor: #cfcfcf;
+
+
+@media (min-width: 768px) {
+    #borderToggleThingy {
+        border-right: 1px solid $tertiaryTextColor;
+        border-left: 1px solid $tertiaryTextColor;
+    }
+}
+
+// fixes nav being scrollable
+@media (max-width: 576px) {
+    * {
+        font-size: 0.925em;
+    }
+}
 
 .vh-90 {
     height: 90vh;
@@ -8,6 +24,15 @@ $primaryTextColor: $primaryColor;
 
 .beegText {
     font-size: 10vw;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 .backgroundImage {
@@ -22,12 +47,16 @@ $primaryTextColor: $primaryColor;
     z-index: 0;
 }
 
+.primaryTextColor {
+    color: $primaryTextColor;
+}
+
 .secondaryTextColor {
     color: $secondaryTextColor;
 }
 
-.primaryTextColor {
-    color: $primaryTextColor;
+.tertiaryTextColor {
+    color: $tertiaryTextColor;
 }
 
 .btn-primary {
