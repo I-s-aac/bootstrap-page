@@ -4,12 +4,32 @@ $primaryColor: rgb(155, 0, 202);
     background-color: $primaryColor;
 }
 
+.borderPrimary {
+    border-color: $primaryColor;
+}
 
 .page {
     height: 100vh;
+    flex-direction: column;
     img {
         height: 90vh;
         object-fit: cover;
         object-position: center;
     }
+
+    nav {
+        height: 100%;
+        .btn-primary {
+            background-color: $primaryColor;
+            border: 0;
+            &:hover {
+                background-color: mix(#FFFFFF, $primaryColor 10%);
+            }
+            transition: 0.25s;
+        }
+        a {
+            font-weight: bold;
+        }
+    }
+
 }

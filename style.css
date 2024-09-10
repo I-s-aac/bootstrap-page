@@ -2,8 +2,13 @@
   background-color: rgb(155, 0, 202);
 }
 
+.borderPrimary {
+  border-color: rgb(155, 0, 202);
+}
+
 .page {
   height: 100vh;
+  flex-direction: column;
 }
 .page img {
   height: 90vh;
@@ -11,4 +16,18 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.page nav {
+  height: 100%;
+}
+.page nav .btn-primary {
+  background-color: rgb(155, 0, 202);
+  border: 0;
+  transition: 0.25s;
+}
+.page nav .btn-primary:hover {
+  background-color: #cd80e5;
+}
+.page nav a {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
