@@ -1,0 +1,14 @@
+.bgPrimary {
+  background-color: rgb(155, 0, 202);
+}
+
+.page {
+  height: 100vh;
+}
+.page img {
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+$primaryColor: rgb(155, 0, 202);
+
+.bgPrimary {
+    background-color: $primaryColor;
+}
+
+
+.page {
+    height: 100vh;
+    img {
+        height: 90vh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
